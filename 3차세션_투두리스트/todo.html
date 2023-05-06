@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="todo.css">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="todo.css" />
     <title>양파쿵야의 TO DO LIST</title>
-    <link rel="shortcut icon" href="양파쿵야.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="shortcut icon" href="양파쿵야.png" type="image/x-icon" />
+  </head>
+  <body>
     <div class="name">양파쿵야의 TO DO LIST</div>
     <div class="memo">
-        <div>양파쿵야가 되기 위해선 투두리스트를 잘 지켜야해요 !</div>
-        <div>지킬 수 있는 것만 등록해봐요 !</div>
+      <div class="mainImage">
+        <img src="main.jpg" alt="양파쿵야">
+      </div>
+      <div>양파쿵야가 되기 위해선 투두리스트를 잘 지켜야해요 !</div>
+      <div>잘 수행했다면 완료 버튼을 눌러주세요 !</div>
     </div>
-    <div class="form">
-        <input id="input" type="text"/>
-        <button class="input-submit" id="input-submit-01">등록</button>
-        <ul id="list">
-        </ul>
-    </div>
+    <form id="toDoForm">
+      <!--toDoForm 안의 input에서 입력된 값을 ul태그안에 넣음-->
+      <input type="text" placeholder="  작성 후 엔터를 눌러주세요 !" />
+    </form>
+    <ul id="toDoList"></ul>
     <script src="todo.js"></script>
-</body>
+  </body>
 </html>
